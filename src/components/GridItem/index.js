@@ -9,8 +9,10 @@ const GridItem = ({item, onDelete}) => {
 			<C.Td> {item.amount} </C.Td>
 			<C.Td alignCenter>
 				{''}
-				{item.expense ? (<FaRegArrowAltCircleDown color="red"/>
-				) : (<FaRegArrowAltCircleUp color="green"/>
+				{item.expense ? (
+					<FaRegArrowAltCircleDown color="red"/>
+				) : (
+					<FaRegArrowAltCircleUp color="green"/>
 				)}
 			</C.Td>
 			<C.Td alignCenter>
